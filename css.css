@@ -31,7 +31,6 @@
   from {
     background-image: url(https://i.postimg.cc/mDfh5hKD/couple-silhouette-sunset-scenery-digital-art-4k-wallpaper-uhdpaper-com-777-0-i.jpg);
   }
-
   to {
     background-image: url(./jo.jpeg);
   }
@@ -55,11 +54,11 @@
   align-items: center;
   justify-content: center;
   animation: Beat 2s ease infinite alternate;
-
   position: absolute;
   left: 35%;
   top: -7%;
 }
+
 #container a {
   position: absolute;
   text-decoration: none;
@@ -68,12 +67,14 @@
   font-weight: 700;
   font-family: cursive;
 }
+
 #container span {
   color: rgb(255, 255, 255);
   font-weight: 300;
   font-size: 10px;
   padding-top: 100px;
 }
+
 .left {
   background-color: red;
   height: 12vw;
@@ -82,6 +83,7 @@
   rotate: -47deg;
   translate: 30%;
 }
+
 .right {
   background-color: red;
   height: 12vw;
@@ -90,6 +92,7 @@
   rotate: 47deg;
   translate: -30%;
 }
+
 @keyframes Beat {
   0% {
     transform: scale(120%);
@@ -115,6 +118,7 @@ h2 {
   text-align: center;
   animation: flicker 0.5s ease-in-out infinite alternate;
 }
+
 @keyframes flicker {
   0% {
     opacity: 0.8;
@@ -136,31 +140,54 @@ h1 {
   position: absolute;
   bottom: 30%;
 }
+
 h1 span {
   transition: 0.2s linear;
 }
+
 h1:hover span:nth-child(1) {
   margin-right: 5px;
 }
+
 h1:hover span:nth-child(1):after {
   content: "💖";
 }
+
 h1:hover span:nth-child(2) {
   margin-left: 30px;
 }
+
 h1:hover span {
   color: #fff;
   text-shadow: 0 0 10px #ceda26, 0 0 20px #e4e743, 0 0 40px #fff;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+    bottom: 20%;
+  }
+
   h2,
   p {
-    font-size: 10px;
+    font-size: 14px;
+    bottom: 5%;
   }
-  .left {
-    height: 22vw;
+
+  #container {
+    width: 50vw;
+    top: 10%;
   }
-  .right {
-    height: 22vw;
+
+  .left, .right {
+    height: 25vw;
+  }
+
+  #container a {
+    font-size: 12px;
+  }
+
+  #container span {
+    font-size: 8px;
   }
 }
